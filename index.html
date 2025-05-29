@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/money-icon.svg">
+    <title>Conversor Moedas</title>
+</head>
+
+<body>
+    <div class="background-svg">
+      <svg width="100%" height="100%" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-bg">
+        <g>
+          <g class="dollar-group">
+            <text x="100" y="200" font-size="32" fill="#38ef7d" opacity="0.18">$</text>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 60" dur="8s" repeatCount="indefinite"/>
+          </g>
+          <g class="dollar-group">
+            <text x="400" y="100" font-size="24" fill="#38ef7d" opacity="0.13">$</text>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 80" dur="10s" repeatCount="indefinite"/>
+          </g>
+          <g class="dollar-group">
+            <text x="800" y="300" font-size="40" fill="#38ef7d" opacity="0.15">$</text>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 100" dur="12s" repeatCount="indefinite"/>
+          </g>
+          <g class="dollar-group">
+            <text x="1200" y="150" font-size="28" fill="#38ef7d" opacity="0.12">$</text>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 70" dur="9s" repeatCount="indefinite"/>
+          </g>
+          <g class="dollar-group">
+            <text x="600" y="600" font-size="36" fill="#38ef7d" opacity="0.14">$</text>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 90" dur="11s" repeatCount="indefinite"/>
+          </g>
+          <g class="dollar-group">
+            <text x="300" y="700" font-size="22" fill="#38ef7d" opacity="0.10">$</text>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 60" dur="7s" repeatCount="indefinite"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="main-centralizado">
+      <div class="side-header">
+        <h1 class="app-title">Conversor de Moedas</h1>
+      </div>
+      <main>
+        <div class="converter-box">
+          <div class="moeda-box origem">
+            <img src="./assets/real.png" alt="logo-moeda-a-converter">
+            <p class="currency">Real</p>
+            <p class="currency-value-to-convert">R$ 0,00</p>
+          </div>
+          <img class="arrow-img" src="./assets/arrow.png" alt="seta">
+          <div class="moeda-box destino">
+            <img class="currency-img" id="currency-img" src="./assets/dolar.png" alt="logo-moeda-convertida">
+            <p class="currency" id="currency-name">Dólar americano</p>
+            <p class="currency-value">US$ 0.0</p>
+          </div>
+        </div>
+        <div class="form-box">
+          <label>
+            Converter <b>de</b>
+            <select disabled>
+              <option>R$ Real Brasileiro</option>
+            </select>
+          </label>
+          <label>
+            Converter <b>para</b>
+            <select class="currency-select">
+              <option value="USD">USD - Dólar</option>
+              <option value="EUR">EUR - Euro</option>
+              <option value="BRL" selected>BRL - Real</option>
+              <option value="GBP">GBP - Libra</option>
+              <option value="JPY">JPY - Iene</option>
+              <option value="CAD">CAD - Dólar Canadense</option>
+              <option value="AUD">AUD - Dólar Australiano</option>
+              <option value="CHF">CHF - Franco Suíço</option>
+              <option value="CNY">CNY - Yuan</option>
+              <option value="ARS">ARS - Peso Argentino</option>
+            </select>
+          </label>
+          <label>
+            Valor
+            <input class="input-currency" placeholder="R$ 10.000,00">
+          </label>
+          <button class="convert-button">Converter</button>
+        </div>
+      </main>
+    </div>
+
+    <!--
+      ATENÇÃO: Para o visual ficar completo, adicione as imagens:
+      - ./assets/finance-icon.svg (ícone do conversor, sugerido: ícone de gráfico, cifrão ou moedas)
+      - ./assets/bg-market.svg (imagem de fundo fluida, sugerido: linhas, gráficos, moedas, etc)
+      Você pode baixar ícones gratuitos em sites como undraw.co, flaticon.com ou svgbackgrounds.com.
+    -->
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
